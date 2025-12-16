@@ -1,12 +1,14 @@
+
+
+## Graphstream core for Java 11.
+## This project is a fork of [GraphStream/gs-core](https://github.com/graphstream/gs-core/), redistributed under CECILL-C license.
+
 # GraphStream
-
-
-[![Build Status](https://travis-ci.org/graphstream/gs-core.svg?branch=dev)](https://travis-ci.org/graphstream/gs-core)
 
 The GraphStream project is a java library that provides an API to model,
 analyze and visualize graphs and dynamic graphs.
 
-Check out the Website <http://www.graphstream-project.org/> for more information.
+Check out the original projects website <http://www.graphstream-project.org/> for more information.
 
 ## Installing GraphStream
 
