@@ -19,9 +19,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<!-- TODO: update ids -->
 	<groupId>org.graphstream</groupId>
 	<artifactId>gs-core</artifactId>
-	<version>2.1.0-SNAPSHOT</version>
+	<version>2.2-SNAPSHOT</version>
   	<packaging>jar</packaging>
 	
 	<name>gs-core</name>
@@ -32,19 +33,6 @@
 		that contains the minimal needed to read and write a graph.
 	</description>
 	<url>http://graphstream-project.org</url>
-
-	<!-- Source code of GraphStream is hosted on GitHub. -->
-	<scm>
-		<connection>scm:git:git://github.com/graphstream/gs-core.git</connection>
-		<developerConnection>scm:git:git://github.com/graphstream/gs-core.git</developerConnection>
-		<url>https://github.com/graphstream/gs-core</url>
-	</scm>
-
-	<!-- GraphStream is using the GitHub issue tracker. -->
-	<issueManagement>
-		<system>github</system>
-		<url>https://github.com/graphstream/gs-core/issues</url>
-	</issueManagement>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -114,10 +102,10 @@
 		</license>
 	</licenses>
 
-	<profiles>
+	<!-- <profiles>
 		<profile>
-			<!-- This profile has to be enabled when releasing the package. It will 
-				enable the sign phase. -->
+			 This profile has to be enabled when releasing the package. It will 
+				enable the sign phase.
 			<id>release</id>
 			<distributionManagement>
 				<repository>
@@ -147,7 +135,7 @@
 				</plugins>
 			</build>
 		</profile>
-	</profiles>
+	</profiles> -->
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
@@ -191,10 +179,10 @@
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>11</source>
+					<target>11</target>
 				</configuration>
-				<version>3.6.2</version>
+				<version>3.13.0</version>
 			</plugin>
 
 			<plugin>
@@ -237,7 +225,7 @@
 					<nonavbar>false</nonavbar>
 					<notree>false</notree>
 					<show>public</show>
-					<source>1.8</source>
+					<source>11</source>
 					<splitindex>true</splitindex>
 					<use>true</use>
 					<version>true</version>
