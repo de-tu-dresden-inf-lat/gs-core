@@ -110,8 +110,8 @@
 
 	<profiles>
 		<profile>
-			 This profile has to be enabled when releasing the package. It will 
-				enable the sign phase.
+			 <!-- This profile has to be enabled when releasing the package. It will 
+				enable the sign & publishing phase. -->
 			<id>sonatypeDeploy</id>
 			<build>
 				<plugins>
